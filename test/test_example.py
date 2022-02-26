@@ -24,8 +24,8 @@ def test_zxbasic():
     tap_filename = f'{Path(bas_filename).stem}.tap'
     log.debug(f'Tape filename: {tap_filename}')
     with open(tap_filename, 'rb') as f:
-        encoded = base64.b64encode(f.read())
-        log.debug(f'Encoded: {encoded}')
+        base64_encoded = base64.b64encode(f.read()).decode()
+        log.debug(f'Base64 encoded: {base64_encoded}')
 
     os.remove(bas_filename)
     os.remove(tap_filename)

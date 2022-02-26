@@ -55,7 +55,7 @@ def handle_compile_request(
     # Read and base64 encode the binary tape file.
     tap_filename = f'{Path(bas_filename).stem}.tap'
     with open(tap_filename, 'rb') as f:
-        encoded = base64.b64encode(f.read())
+        base64_encoded = base64.b64encode(f.read()).decode()
         os.remove(bas_filename)
         os.remove(tap_filename)
-        return CompileResult(base64_encoded=str(encoded))
+        return CompileResult(base64_encoded=base64_encoded)
