@@ -1,0 +1,7 @@
+/**/*.swp
+/**/.git/
+/**/.graphqlconfig
+/**/.idea/
+/**/__pycache__/
+/**/schema.graphql
+/**/venv/

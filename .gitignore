@@ -17,3 +17,5 @@ scratch/
 htmlcov/
 build/
 venv/
+.graphqlconfig
+schema.graphql
