@@ -1,4 +1,0 @@
-sub PRINT642(c as STRING)
-END SUB
-
-PRINT642("Hola2")

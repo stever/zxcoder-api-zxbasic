@@ -1,3 +1,0 @@
-declare sub nofunc
-
-nofunc()

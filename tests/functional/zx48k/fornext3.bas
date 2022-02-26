@@ -1,2 +1,0 @@
-FOR i = 0 TO 10000:
-NEXT i

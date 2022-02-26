@@ -1,3 +1,0 @@
-
-Function a()
-End Function
