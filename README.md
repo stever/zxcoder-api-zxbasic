@@ -38,39 +38,6 @@ docker run \
   steverobertson/zxplay-api-zxbasic
 ```
 
-## Environment Variables
-
-* API_URL
-
-```powershell
-$env:API_URL='https://zxplay.org/api/v1/graphql'
-```
-
-## GraphQL Configuration
-
-Using the GraphQL JS plugin for WebStorm. Download the schemas for the two endpoints using the GraphQL JS UI.
-
-Create a file named `.graphqlconfig` with the following:
-
-```json
-{
-  "name": "Hasura GraphQL Schema",
-  "schemaPath": "schema.graphql",
-  "extensions": {
-    "endpoints": {
-      "Default GraphQL Endpoint": {
-        "url": "https://zxplay.org/api/v1/graphql",
-        "headers": {
-          "user-agent": "JS GraphQL",
-          "x-hasura-admin-secret": "<secret>"
-        },
-        "introspect": false
-      }
-    }
-  }
-}
-```
-
 ## Hasura Deployment Configuration
 
 ### Compile Action Service
